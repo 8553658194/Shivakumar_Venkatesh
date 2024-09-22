@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shivakumar V's Research Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Welcome to Shivakumar V's Research Portfolio!</h1>
-            <p>PhD Scholar at Indian Institute of Science (IISc) focusing on VLSI, Smart Prosthetics, and Intent Recognition.</p>
-        </div>
+    <header class="hero">
+        <h1>Welcome to Shivakumar V's Research Portfolio</h1>
+        <p>PhD Scholar at IISc - Exploring VLSI and Smart Prosthetics</p>
     </header>
 
     <nav>
@@ -20,7 +18,7 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#research">Research Interests</a></li>
             <li><a href="#experience">Professional Experience</a></li>
-            <li><a href="#projects">Academic Projects</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#publications">Publications</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -28,73 +26,109 @@
 
     <section id="skills">
         <h2>Core Skills</h2>
-        <div class="skill">
-            <i class="fab fa-python"></i>
-            <p>Python</p>
+        <div class="skill-icons">
+            <div class="skill">
+                <img src="images/vlsi-icon.png" alt="VLSI Design">
+                <p>VLSI Design</p>
+            </div>
+            <div class="skill">
+                <img src="images/prosthetics-icon.png" alt="Prosthetics">
+                <p>Smart Prosthetics</p>
+            </div>
+            <div class="skill">
+                <img src="images/haptics-icon.png" alt="Haptics">
+                <p>Haptics</p>
+            </div>
+            <div class="skill">
+                <img src="images/product-design-icon.png" alt="Product Design">
+                <p>Product Design</p>
+            </div>
         </div>
-        <div class="skill">
-            <i class="fab fa-c"></i>
-            <p>C</p>
-        </div>
-        <div class="skill">
-            <i class="fas fa-cogs"></i>
-            <p>Verilog</p>
-        </div>
-        <!-- Add more skills as needed -->
     </section>
 
     <section id="research">
         <h2>Research Interests</h2>
         <div class="accordion">
-            <h3>VLSI Design</h3>
-            <div class="panel">
-                <p>Explore cutting-edge technology for processing speed and power conservation.</p>
+            <div class="accordion-item">
+                <div class="accordion-title">VLSI Design</div>
+                <div class="accordion-content">
+                    <p>Description about VLSI Design research goes here.</p>
+                </div>
             </div>
-            <h3>Smart Prosthetics</h3>
-            <div class="panel">
-                <p>Enhancing artificial limbs through intent recognition and haptics.</p>
+            <div class="accordion-item">
+                <div class="accordion-title">Smart Prosthetics</div>
+                <div class="accordion-content">
+                    <p>Description about Smart Prosthetics research goes here.</p>
+                </div>
             </div>
-            <!-- Add more research interests -->
+            <div class="accordion-item">
+                <div class="accordion-title">Haptics</div>
+                <div class="accordion-content">
+                    <p>Description about Haptics research goes here.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title">Product Design</div>
+                <div class="accordion-content">
+                    <p>Description about Product Design research goes here.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="experience">
         <h2>Professional Experience</h2>
-        <div class="experience-item">
-            <h3>PhD Scholar, IISc</h3>
-            <p>January 2023 - Present</p>
-            <p>Currently pursuing PhD in Product Design and Engineering.</p>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Position Title</h3>
+                <p>Company Name | Year - Year</p>
+                <div class="timeline-content">
+                    <p>Details about the position and achievements.</p>
+                </div>
+            </div>
+            <!-- Add more timeline items as needed -->
         </div>
-        <!-- Add more experiences -->
     </section>
 
     <section id="projects">
         <h2>Academic Projects</h2>
-        <div class="project">
-            <h3>Design and Verification of 32-bit Pipelined RISC Architecture</h3>
-            <p>Enhanced speed and reduced power consumption using Verilog modeling.</p>
+        <div class="project-cards">
+            <div class="project-card">
+                <h3>Project Title</h3>
+                <p>Short Description of the project.</p>
+                <p><strong>Tools Used:</strong> Tool 1, Tool 2</p>
+            </div>
+            <!-- Add more project cards as needed -->
         </div>
-        <!-- Add more projects -->
     </section>
 
     <section id="publications">
         <h2>Publications</h2>
-        <p>Coming soon...</p>
+        <div class="publication-list">
+            <a href="link_to_publication1.pdf" target="_blank">Publication Title 1</a>
+            <a href="link_to_publication2.pdf" target="_blank">Publication Title 2</a>
+            <!-- Add more publications as needed -->
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
+    <footer id="contact">
+        <h2>Contact Me</h2>
         <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
             <button type="submit">Send</button>
         </form>
-        <p>Connect with me on <a href="https://www.linkedin.com/in/shivakumar-v-76669a143">LinkedIn</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Shivakumar V. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+            <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+        </div>
     </footer>
 
     <script src="script.js"></script>
