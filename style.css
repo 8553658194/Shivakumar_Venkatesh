@@ -1,39 +1,58 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+    font-family: 'Arial', sans-serif;
 }
 
 header {
-    background-color: #2c3e50;
+    background-image: url('research-background.jpg');
+    background-size: cover;
+    background-position: center;
     color: white;
-    padding: 20px;
-    text-align: center;
 }
 
-header h1 {
-    margin: 0;
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid white;
 }
 
-a {
-    color: #3498db;
-    text-decoration: none;
+.social-icons i {
+    font-size: 24px;
+    transition: color 0.3s ease;
 }
 
-section {
-    margin: 20px;
-    padding: 10px;
-    background-color: white;
-    border-radius: 5px;
+.social-icons i:hover {
+    color: #f39c12;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 18px;
 }
 
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #2c3e50;
+    background: #333;
     color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 20px;
+}
+
+footer a {
+    color: #f39c12;
+}
+
+footer a:hover {
+    color: #f1c40f;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
 }
