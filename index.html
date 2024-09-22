@@ -3,98 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shivakumar V - Research Portfolio</title>
+    <title>Shivakumar V's Research Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Shivakumar V</h1>
-            <p>PhD Scholar | IISc Bangalore</p>
-            <a href="#contact" class="cta-button">Contact Me</a>
+            <h1>Welcome to Shivakumar V's Research Portfolio!</h1>
+            <p>PhD Scholar at Indian Institute of Science (IISc) focusing on VLSI, Smart Prosthetics, and Intent Recognition.</p>
         </div>
     </header>
 
     <nav>
         <ul>
-            <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#research">Research Interests</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Professional Experience</a></li>
+            <li><a href="#projects">Academic Projects</a></li>
             <li><a href="#publications">Publications</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am a dedicated research student with a keen interest in VLSI, Smart Prosthetics, Intent recognition, Haptics, and Product Design.</p>
-        </section>
+    <section id="skills">
+        <h2>Core Skills</h2>
+        <div class="skill">
+            <i class="fab fa-python"></i>
+            <p>Python</p>
+        </div>
+        <div class="skill">
+            <i class="fab fa-c"></i>
+            <p>C</p>
+        </div>
+        <div class="skill">
+            <i class="fas fa-cogs"></i>
+            <p>Verilog</p>
+        </div>
+        <!-- Add more skills as needed -->
+    </section>
 
-        <section id="skills">
-            <h2>Core Skills</h2>
-            <ul>
-                <li>Programming Languages: C, Python, Verilog</li>
-                <li>Hardware Knowledge: Arduino Uno, ORCAD Capture</li>
-                <li>FPGA Tools: EDA Playground, Xilinx ISE</li>
-                <li>Key Concepts: EMG-based prosthetic design, Low-power VLSI</li>
-            </ul>
-        </section>
-
-        <section id="research">
-            <h2>Research Interests</h2>
-            <p>VLSI Design, Smart Prosthetics, Haptics, Product Design.</p>
-        </section>
-
-        <section id="experience">
-            <h2>Professional Experience</h2>
-            <h3>PhD Scholar | IISc</h3>
-            <p>Jan 2023 - Present</p>
-            <h3>Project Engineer | BEL</h3>
-            <p>Jun 2022 - Dec 2022</p>
-        </section>
-
-        <section id="projects">
-            <h2>Academic Projects</h2>
-            <h3>32-bit Pipelined RISC Architecture</h3>
-            <p>Designed using Verilog.</p>
-        </section>
-
-        <section id="publications">
-            <h2>Publications</h2>
-            <p>Coming soon!</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out!</p>
-            <a href="mailto:vshivakumar@iisc.ac.in">Email</a>
-            <div class="social-media">
-                <a href="https://linkedin.com/in/shivakumar-v-76669a143" target="_blank">LinkedIn</a>
-                <a href="https://x.com/shivu_svs" target="_blank">Twitter</a>
+    <section id="research">
+        <h2>Research Interests</h2>
+        <div class="accordion">
+            <h3>VLSI Design</h3>
+            <div class="panel">
+                <p>Explore cutting-edge technology for processing speed and power conservation.</p>
             </div>
-        </section>
-    </main>
+            <h3>Smart Prosthetics</h3>
+            <div class="panel">
+                <p>Enhancing artificial limbs through intent recognition and haptics.</p>
+            </div>
+            <!-- Add more research interests -->
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <div class="experience-item">
+            <h3>PhD Scholar, IISc</h3>
+            <p>January 2023 - Present</p>
+            <p>Currently pursuing PhD in Product Design and Engineering.</p>
+        </div>
+        <!-- Add more experiences -->
+    </section>
+
+    <section id="projects">
+        <h2>Academic Projects</h2>
+        <div class="project">
+            <h3>Design and Verification of 32-bit Pipelined RISC Architecture</h3>
+            <p>Enhanced speed and reduced power consumption using Verilog modeling.</p>
+        </div>
+        <!-- Add more projects -->
+    </section>
+
+    <section id="publications">
+        <h2>Publications</h2>
+        <p>Coming soon...</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/shivakumar-v-76669a143">LinkedIn</a></p>
+    </section>
 
     <footer>
         <p>&copy; 2024 Shivakumar V. All rights reserved.</p>
     </footer>
 
-    <script>
-        $(document).ready(function() {
-            $('nav a').on('click', function(event) {
-                event.preventDefault();
-                const target = $(this).attr('href');
-                $('html, body').animate({
-                    scrollTop: $(target).offset().top
-                }, 800);
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
