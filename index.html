@@ -1,79 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="style.css">
-
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your Name - Portfolio</title>
-    <!-- Include Bootstrap CSS -->
+    <title>Shivakumar V - Portfolio</title>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS for style -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar-brand {
+            font-weight: bold;
+        }
+        h1, h2, h4 {
+            color: #2c3e50;
+        }
+        section {
+            padding: 60px 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+        }
+        .social-links a {
+            margin: 0 10px;
+            color: #fff;
+            font-size: 1.5rem;
+        }
+        .profile-image {
+            width: 150px;
+            border-radius: 50%;
+        }
+    </style>
 </head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your Name - Portfolio</title>
-</head>
 <body>
-<body>
-    <div class="container">
-        <h1 class="text-center my-4">Welcome to My Portfolio</h1>
-        <p class="text-center">This is where your professional information will go.</p>
-    </div>
-</body>
-<body>
-    <div class="container">
-        <!-- Header Section -->
-        <header class="text-center my-5">
-            <h1>Shivakumar V</h1>
-            <p>Bangalore, Karnataka | shivakumardvg123@gmail.com | LinkedIn | 8217612564</p>
-        </header>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">Shivakumar V</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-        <!-- Summary Section -->
-        <section id="summary" class="my-5">
-            <h2>Summary</h2>
-            <p>Highly motivated and dedicated research student with a keen interest in VLSI, Smart Prosthetics, Intent Recognition, Haptics, and Product Design.</p>
-        </section>
+    <!-- About Section -->
+    <section id="about" class="bg-light text-center">
+        <div class="container">
+            <img src="https://via.placeholder.com/150" alt="Shivakumar V" class="profile-image mb-4">
+            <h1 class="display-4">Shivakumar V</h1>
+            <p class="lead">Research Scholar specializing in VLSI, Smart Prosthetics, Intent Recognition, Haptics, and Product Design.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/shivakumardvg123" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://twitter.com/shivakumardvg" target="_blank"><i class="bi bi-twitter"></i></a>
+            </div>
+        </div>
+    </section>
 
-        <!-- Experience Section -->
-        <section id="experience" class="my-5">
-            <h2>Experience</h2>
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="text-center">Experience</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <h4>PhD Scholar</h4>
-                    <p>Indian Institute of Science (IISc) (January 2023 - Present)</p>
+                    <h4>PhD Scholar, IISc</h4>
+                    <p>January 2023 - Present</p>
+                    <p>Researching product design and smart prosthetics with a focus on advanced technologies like intent recognition and haptics.</p>
                 </div>
                 <div class="col-md-6">
-                    <h4>Project Engineer</h4>
-                    <p>Bharat Electronics Limited, Bangalore (June 2022 - December 2022)</p>
+                    <h4>Project Engineer, Bharat Electronics Limited</h4>
+                    <p>June 2022 - December 2022</p>
+                    <p>Worked on radar systems and gun fire control systems for naval defense applications.</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Trainee Engineer, Bharat Electronics Limited</h4>
+                    <p>March 2021 - May 2022</p>
+                    <p>Served in the radar systems/gun fire control systems team under naval systems department.</p>
                 </div>
             </div>
-        </section>
-    </div>
-</body>
+        </div>
+    </section>
 
-    <h1>Welcome to My Portfolio</h1>
-    <p>This is where your professional information will go.</p>
     <!-- Education Section -->
-<section id="education" class="my-5">
-    <h2>Education</h2>
-    <ul class="list-group">
-        <li class="list-group-item">PhD in Product Design and Engineering, IISc, Bangalore (2024), GPA: 8.4</li>
-        <li class="list-group-item">MTech in VLSI Design, BMS College of Engineering (2020), GPA: 8.42</li>
-        <li class="list-group-item">BE in Electronics and Communication, Bapuji Institute of Engineering and Technology (2017), GPA: 51.13%</li>
-    </ul>
-</section>
+    <section id="education" class="bg-light">
+        <div class="container">
+            <h2 class="text-center">Education</h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">PhD in Product Design and Engineering, IISc Bangalore (2024), GPA: 8.4</li>
+                <li class="list-group-item">MTech in VLSI Design and Embedded Systems, BMS College of Engineering (2020), GPA: 8.42</li>
+                <li class="list-group-item">BE in Electronics and Communication, Bapuji Institute of Engineering and Technology (2017), GPA: 51.13%</li>
+            </ul>
+        </div>
+    </section>
 
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="text-center">Projects</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>32 Bit Pipelined RISC Architecture</h4>
+                    <p>Enhanced speed and reduced power consumption using Verilog and UVM Testbench Methodology.</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Design and Validation of AI IPs on FPGA</h4>
+                    <p>Implemented Convolutional Neural Networks (CNN) on FPGA for image recognition and classification.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light text-center">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:shivakumardvg123@gmail.com">shivakumardvg123@gmail.com</a></p>
+            <p>Phone: 8217612564</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <p>&copy; Shivakumar V, 2024</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/shivakumardvg123" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://twitter.com/shivakumardvg" target="_blank"><i class="bi bi-twitter"></i></a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-body {
-    font-family: Arial, sans-serif;
-}
-
-h1 {
-    color: #2c3e50;
-}
-
 </html>
