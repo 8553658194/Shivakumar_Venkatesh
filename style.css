@@ -1,71 +1,184 @@
-/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    color: #333;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
-    background-image: url('images/research-background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    padding: 0;
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+h1, h2, h3, p {
+    margin: 0;
     padding: 0;
 }
 
-h1, h2, h3 {
-    color: #333;
-}
-
-a {
-    color: #0077cc;
-    text-decoration: none;
-}
-
-/* Header Section */
-.header {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 40px;
-    display: flex;
-    align-items: center;
-}
-
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-
-.info {
-    color: white;
-}
-
-.info h1 {
-    font-size: 2.5em;
-    margin: 0;
-}
-
-/* Section Styles */
+/* Section Styling */
 section {
-    padding: 40px 20px;
-    background: rgba(255, 255, 255, 0.8);
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-
-h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-p, li {
-    font-size: 1.1em;
-    line-height: 1.5;
-}
-
-/* Footer Styles */
-.footer {
-    background: #333;
-    color: white;
+    padding: 50px;
     text-align: center;
+}
+
+/* Introduction Section */
+#introduction {
+    background-image: url('https://example.com/your_background_image.jpg');
+    background-size: cover;
+    color: white;
+    padding: 100px 20px;
+}
+
+#introduction h1 {
+    font-size: 3em;
+    font-weight: bold;
+    animation: fadeIn 1s;
+}
+
+#introduction p {
+    font-size: 1.5em;
+    animation: fadeIn 1.5s;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #ffffff;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill-icon {
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.skill-icon:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+}
+
+/* Research Interests Section */
+#research-interests {
+    background-image: url('https://example.com/your_research_background.jpg');
+    background-size: cover;
+    color: white;
+}
+
+.accordion h3 {
+    cursor: pointer;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.accordion h3:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.panel {
+    display: none;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+/* Professional Experience Section */
+#experience {
+    background-color: #ffffff;
+}
+
+/* Academic Projects Section */
+#projects {
+    background-color: #333;
+    color: white;
+}
+
+.project {
+    margin: 20px 0;
+}
+
+/* Publications Section */
+#publications {
+    background-color: #f0f0f0;
+}
+
+.publication-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.publication-list li a {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #ffffff;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: teal;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkcyan;
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
     padding: 20px;
-    font-size: 0.9em;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+    }
+
+    #introduction h1 {
+        font-size: 2.5em;
+    }
+
+    #introduction p {
+        font-size: 1.2em;
+    }
 }
