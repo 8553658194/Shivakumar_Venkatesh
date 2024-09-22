@@ -3,144 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Shivakumar V - Portfolio</title>
+    <title>Shivakumar V - Researcher</title>
+    <link rel="stylesheet" href="styles.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS for style -->
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-        }
-        .navbar-brand {
-            font-weight: bold;
-        }
-        h1, h2, h4 {
-            color: #2c3e50;
-        }
-        section {
-            padding: 60px 0;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-        }
-        .social-links a {
-            margin: 0 10px;
-            color: #fff;
-            font-size: 1.5rem;
-        }
-        .profile-image {
-            width: 150px;
-            border-radius: 50%;
-        }
-    </style>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <header class="bg-dark text-white text-center py-5">
         <div class="container">
-            <a class="navbar-brand" href="#">Shivakumar V</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
+            <img src="your-picture.jpg" alt="Shivakumar V" class="rounded-circle profile-img mb-3">
+            <h1>Shivakumar V</h1>
+            <p>Bangalore, Karnataka | <a href="mailto:shivakumardvg123@gmail.com" class="text-warning">shivakumardvg123@gmail.com</a> | 8217612564</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/shivakumar-v-76669a143" class="text-white me-4" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/your-twitter" class="text-white" target="_blank"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
-    </nav>
+    </header>
 
-    <!-- About Section -->
-    <section id="about" class="bg-light text-center">
+    <section id="summary" class="py-5 bg-light">
         <div class="container">
-            <img src="https://via.placeholder.com/150" alt="Shivakumar V" class="profile-image mb-4">
-            <h1 class="display-4">Shivakumar V</h1>
-            <p class="lead">Research Scholar specializing in VLSI, Smart Prosthetics, Intent Recognition, Haptics, and Product Design.</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/shivakumardvg123" target="_blank"><i class="bi bi-linkedin"></i></a>
-                <a href="https://twitter.com/shivakumardvg" target="_blank"><i class="bi bi-twitter"></i></a>
-            </div>
+            <h2 class="text-center mb-4">Summary</h2>
+            <p class="text-center">Highly motivated and dedicated research student with a keen interest in VLSI, Smart Prosthetics, Intent recognition, Haptics, and Product Design.</p>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience">
+    <section id="experience" class="py-5">
         <div class="container">
-            <h2 class="text-center">Experience</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <h4>PhD Scholar, IISc</h4>
-                    <p>January 2023 - Present</p>
-                    <p>Researching product design and smart prosthetics with a focus on advanced technologies like intent recognition and haptics.</p>
+            <h2 class="text-center mb-4">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>PhD Scholar</h4>
+                    <p>Indian Institute of Science (IISc), January 2023 - Present</p>
+                    <p>Pursuing PhD in Product Design and Engineering from the Dept. of Design and Manufacturing (DnM).</p>
                 </div>
-                <div class="col-md-6">
-                    <h4>Project Engineer, Bharat Electronics Limited</h4>
-                    <p>June 2022 - December 2022</p>
-                    <p>Worked on radar systems and gun fire control systems for naval defense applications.</p>
+                <div class="timeline-item">
+                    <h4>Project Engineer</h4>
+                    <p>Bharat Electronics Limited, June 2022 - December 2022</p>
+                    <p>Worked on radar systems and gun fire control systems for naval defense.</p>
                 </div>
-                <div class="col-md-6">
-                    <h4>Trainee Engineer, Bharat Electronics Limited</h4>
-                    <p>March 2021 - May 2022</p>
-                    <p>Served in the radar systems/gun fire control systems team under naval systems department.</p>
+                <div class="timeline-item">
+                    <h4>Trainee Engineer</h4>
+                    <p>Bharat Electronics Limited, March 2021 - May 2022</p>
+                    <p>Worked on a servo motor control system for GFCS to provide safety for the Indian Navy.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="bg-light">
+    <section id="projects" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center">Education</h2>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">PhD in Product Design and Engineering, IISc Bangalore (2024), GPA: 8.4</li>
-                <li class="list-group-item">MTech in VLSI Design and Embedded Systems, BMS College of Engineering (2020), GPA: 8.42</li>
-                <li class="list-group-item">BE in Electronics and Communication, Bapuji Institute of Engineering and Technology (2017), GPA: 51.13%</li>
+            <h2 class="text-center mb-4">Projects</h2>
+            <ul>
+                <li><strong>32 Bit Pipelined RISC Architecture:</strong> Enhanced the speed and reduced power consumption of a 32-bit RISC processor using Verilog.</li>
+                <li><strong>AI IPs on FPGA:</strong> Implemented Convolutional Neural Networks (CNN) on FPGA for image recognition.</li>
+                <li><strong>Solar Piezo Hybrid Power Charging System:</strong> Developed a hybrid system using renewable energy.</li>
             </ul>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
+    <section id="education" class="py-5">
         <div class="container">
-            <h2 class="text-center">Projects</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <h4>32 Bit Pipelined RISC Architecture</h4>
-                    <p>Enhanced speed and reduced power consumption using Verilog and UVM Testbench Methodology.</p>
-                </div>
-                <div class="col-md-6">
-                    <h4>Design and Validation of AI IPs on FPGA</h4>
-                    <p>Implemented Convolutional Neural Networks (CNN) on FPGA for image recognition and classification.</p>
-                </div>
-            </div>
+            <h2 class="text-center mb-4">Education</h2>
+            <ul>
+                <li><strong>PhD in Product Design and Engineering</strong>, Indian Institute of Science (IISc) - 2024, GPA: 8.4</li>
+                <li><strong>MTech in VLSI Design and Embedded Systems</strong>, BMS College of Engineering - 2020, GPA: 8.42</li>
+                <li><strong>BE in Electronics and Communication</strong>, Bapuji Institute of Engineering and Technology - 2017, GPA: 51.13%</li>
+            </ul>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="bg-light text-center">
+    <section id="skills" class="py-5 bg-light">
         <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:shivakumardvg123@gmail.com">shivakumardvg123@gmail.com</a></p>
-            <p>Phone: 8217612564</p>
+            <h2 class="text-center mb-4">Skills</h2>
+            <ul class="list-inline text-center">
+                <li class="list-inline-item">VLSI</li>
+                <li class="list-inline-item">Smart Prosthetics</li>
+                <li class="list-inline-item">Haptics</li>
+                <li class="list-inline-item">Product Design</li>
+                <li class="list-inline-item">C, Python, Verilog</li>
+            </ul>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="text-center py-4">
-        <p>&copy; Shivakumar V, 2024</p>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/shivakumardvg123" target="_blank"><i class="bi bi-linkedin"></i></a>
-            <a href="https://twitter.com/shivakumardvg" target="_blank"><i class="bi bi-twitter"></i></a>
-        </div>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© Shivakumar V, 2024 | <a href="https://www.linkedin.com/in/shivakumar-v-76669a143" class="text-warning" target="_blank">LinkedIn</a> | <a href="https://twitter.com/your-twitter" class="text-warning" target="_blank">Twitter</a></p>
     </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
