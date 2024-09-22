@@ -1,58 +1,71 @@
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
-}
-
-header {
-    background-image: url('research-background.jpg');
+    color: #333;
+    margin: 0;
+    background-image: url('images/research-background.jpg');
     background-size: cover;
     background-position: center;
-    color: white;
-}
-
-.profile-img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border: 5px solid white;
-}
-
-.social-icons i {
-    font-size: 24px;
-    transition: color 0.3s ease;
-}
-
-.social-icons i:hover {
-    color: #f39c12;
-}
-
-h2 {
-    font-weight: bold;
-}
-
-ul {
-    list-style: none;
+    background-attachment: fixed;
     padding: 0;
 }
 
-ul li {
-    margin: 10px 0;
-    font-size: 18px;
+h1, h2, h3 {
+    color: #333;
 }
 
-footer {
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+/* Header Section */
+.header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.info {
+    color: white;
+}
+
+.info h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p, li {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+/* Footer Styles */
+.footer {
     background: #333;
     color: white;
+    text-align: center;
     padding: 20px;
-}
-
-footer a {
-    color: #f39c12;
-}
-
-footer a:hover {
-    color: #f1c40f;
-}
-
-.timeline-item {
-    margin-bottom: 20px;
+    font-size: 0.9em;
 }
