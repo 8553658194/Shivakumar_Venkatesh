@@ -1,206 +1,98 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+}
+
+body {
+    background-color: #f4f4f9;
     color: #333;
-    background-color: #f0f0f0;
 }
 
-h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
-}
-
-/* Section Styling */
-section {
-    padding: 50px;
+header {
+    background: linear-gradient(to right, #0066cc, #00cc66);
+    color: white;
+    padding: 20px;
     text-align: center;
 }
 
-/* Introduction Section */
-#introduction {
-    background-image: url('https://example.com/your_background_image.jpg');
-    background-size: cover;
+nav {
+    background-color: #333;
     color: white;
-    padding: 100px 20px;
-    position: relative;
+    padding: 10px 0;
 }
 
-.intro-content {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 30px;
-    border-radius: 10px;
+nav ul {
+    list-style: none;
 }
 
-#introduction h1 {
-    font-size: 2.5em;
-    animation: fadeIn 1s;
+nav ul li {
+    display: inline;
+    margin: 0 20px;
 }
 
-/* Skills Section */
-#skills {
-    background-color: white;
+nav ul li a {
+    color: white;
+    text-decoration: none;
 }
 
-.skills-container {
+.section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.skill-list {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
 }
 
-.skill-icon {
-    margin: 20px;
-    text-align: center;
-    transition: transform 0.3s;
-}
-
-.skill-icon:hover {
-    transform: scale(1.1);
-}
-
-.icon {
-    width: 50px;
-    height: 50px;
-}
-
-/* Research Interests Section */
-#research-interests .accordion {
-    background-color: #e0f7fa;
-    border-radius: 10px;
-    margin: 20px auto;
-    width: 80%;
-}
-
-.accordion h3 {
-    cursor: pointer;
+.skill {
+    background-color: #e9ecef;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
     padding: 15px;
-    border-bottom: 1px solid #ccc;
-    background-color: #b2ebf2;
+    flex: 1 1 200px;
 }
 
-.panel {
-    display: none;
-    padding: 15px;
-}
-
-/* Experience Section */
-#experience {
-    background-color: white;
-}
-
-.timeline {
-    position: relative;
-    padding: 20px 0;
-}
-
-.timeline-entry {
-    margin: 20px 0;
-    background: #f1f1f1;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-/* Academic Projects Section */
-#projects .project {
-    margin: 20px;
-    background: #e1bee7;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.project-image {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Publications Section */
-#publications {
-    background-color: white;
-}
-
-.publication-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.publication-list li {
-    margin: 10px 0;
-}
-
-/* Contact Section */
-#contact {
-    background-color: #f1f8e9;
-    padding: 50px;
+.job, .project {
+    margin-bottom: 20px;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 form label {
-    margin: 10px 0;
+    margin: 10px 0 5px;
 }
 
 form input, form textarea {
-    width: 300px;
     padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
     border-radius: 5px;
 }
 
-button {
-    background-color: teal;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: darkcyan;
-}
-
-/* Social Links */
-.social-links {
-    margin-top: 20px;
-}
-
-.social-icon {
-    width: 30px;
-    height: 30px;
-    margin: 0 10px;
-}
-
-/* Footer */
 footer {
+    text-align: center;
+    padding: 20px;
     background-color: #333;
     color: white;
-    padding: 20px;
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .skills-container {
-        flex-direction: column;
-    }
-
-    #introduction h1 {
-        font-size: 2em;
-    }
-
-    #introduction p {
-        font-size: 1.2em;
-    }
 }
