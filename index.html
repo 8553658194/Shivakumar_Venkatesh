@@ -3,21 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shivakumar V's Research Portfolio</title>
+    <title>Shivakumar V - Research Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Welcome to Shivakumar V's Research Portfolio</h1>
-        <p>PhD Scholar at the Indian Institute of Science</p>
+        <div class="container">
+            <h1>Welcome to Shivakumar V's Research Portfolio</h1>
+            <p>PhD Scholar at the Indian Institute of Science (IISc)</p>
+        </div>
     </header>
 
     <nav>
         <ul>
             <li><a href="#introduction">Introduction</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#research-interests">Research Interests</a></li>
+            <li><a href="#research">Research Interests</a></li>
             <li><a href="#experience">Professional Experience</a></li>
             <li><a href="#projects">Academic Projects</a></li>
             <li><a href="#publications">Publications</a></li>
@@ -25,91 +29,105 @@
         </ul>
     </nav>
 
-    <section id="introduction" class="section">
-        <h2>Introduction</h2>
-        <p>I'm a PhD Scholar at the Indian Institute of Science (IISc) with a focus on VLSI, Smart Prosthetics, and Intent Recognition. My research aims to bridge the gap between human intentions and robotic prosthetics through innovative design and engineering solutions.</p>
-        <img src="your-image.jpg" alt="Shivakumar V" class="profile-image">
-    </section>
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>I'm a dedicated research student with a keen interest in VLSI, Smart Prosthetics, Intent recognition, Haptics, and Product design. Currently pursuing my PhD in Product Design and Engineering from the Department of Design and Manufacturing (DnM).</p>
+            <img src="path_to_your_image.jpg" alt="Shivakumar V" class="profile-pic">
+        </section>
 
-    <section id="skills" class="section">
-        <h2>Skills</h2>
-        <div class="skill-list">
-            <div class="skill">
-                <h3>Programming Languages</h3>
-                <p>C, Python, Verilog</p>
+        <section id="skills">
+            <h2>Core Skills</h2>
+            <ul>
+                <li>Programming Languages: C, Python, Verilog</li>
+                <li>Hardware Knowledge: Arduino Uno, ORCAD Capture 16.6</li>
+                <li>Engineering Software: Visio, AutoCAD, VCS Synopsys Verdi</li>
+                <li>FPGA & EDA Tools: EDA Playground, Xilinx ISE</li>
+                <li>Key Concepts: EMG-based prosthetic arm design, Low-power VLSI concepts</li>
+            </ul>
+        </section>
+
+        <section id="research">
+            <h2>Research Interests</h2>
+            <div class="interests">
+                <div class="interest-item">
+                    <h3>VLSI Design</h3>
+                    <p>Explore cutting-edge technology for enhanced processing speeds.</p>
+                </div>
+                <div class="interest-item">
+                    <h3>Smart Prosthetics</h3>
+                    <p>Enhancing artificial limbs through intent recognition and haptics.</p>
+                </div>
+                <div class="interest-item">
+                    <h3>Haptics</h3>
+                    <p>Investigating feedback systems for a more natural user experience.</p>
+                </div>
+                <div class="interest-item">
+                    <h3>Product Design</h3>
+                    <p>Translating innovative concepts into efficient and functional products.</p>
+                </div>
             </div>
-            <div class="skill">
-                <h3>Hardware Knowledge</h3>
-                <p>Arduino Uno, ORCAD Capture 16.6</p>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <article>
+                <h3>PhD Scholar | IISc</h3>
+                <p>January 2023 - Present</p>
+                <p>Pursuing research in Product Design and Engineering.</p>
+            </article>
+            <article>
+                <h3>Project Engineer | Bharat Electronics Limited</h3>
+                <p>June 2022 - December 2022</p>
+                <p>Worked on servo motor control systems for naval defense.</p>
+            </article>
+            <article>
+                <h3>Trainee Engineer | Bharat Electronics Limited</h3>
+                <p>March 2021 - May 2022</p>
+                <p>Collaborated on air/ship defense technologies.</p>
+            </article>
+            <article>
+                <h3>Trainee Engineer | KriSemi Design Technologies Pvt Ltd</h3>
+                <p>August 2019 - August 2020</p>
+                <p>Developed AI-based IPs on FPGA for image detection.</p>
+            </article>
+        </section>
+
+        <section id="projects">
+            <h2>Academic Projects</h2>
+            <article>
+                <h3>Design and Verification of 32-bit Pipelined RISC Architecture</h3>
+                <p>BMS College of Engineering, Jan 2020 - Sept 2020</p>
+                <p>Enhanced speed and reduced power consumption using Verilog.</p>
+            </article>
+            <article>
+                <h3>Design and Validation of AI IPs on FPGA</h3>
+                <p>KriSemi Design Technologies Pvt Ltd, Aug 2019 - Dec 2019</p>
+                <p>Implemented CNN on FPGA for real-time image detection.</p>
+            </article>
+        </section>
+
+        <section id="publications">
+            <h2>Publications</h2>
+            <p>Coming soon!</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact / Collaborate</h2>
+            <p>If you're interested in collaborating, feel free to reach out!</p>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/shivakumar-v-76669a143">LinkedIn</a>
+                <a href="mailto:shivakumardvg123@gmail.com">Email</a>
+                <a href="tel:8217612564">Phone</a>
             </div>
-            <div class="skill">
-                <h3>Engineering Software</h3>
-                <p>Visio, AutoCAD, VCS Synopsys Verdi</p>
-            </div>
-            <div class="skill">
-                <h3>FPGA & EDA Tools</h3>
-                <p>EDA Playground, Xilinx ISE, Vivado</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="research-interests" class="section">
-        <h2>Research Interests</h2>
-        <ul>
-            <li><strong>VLSI Design:</strong> Explore cutting-edge technology to enhance processing speeds while conserving power.</li>
-            <li><strong>Smart Prosthetics:</strong> Enhancing artificial limbs through intent recognition and haptics.</li>
-            <li><strong>Haptics:</strong> Investigating feedback systems for a natural user experience in prosthetics.</li>
-            <li><strong>Product Design:</strong> Translating innovative concepts into efficient, functional products.</li>
-        </ul>
-    </section>
-
-    <section id="experience" class="section">
-        <h2>Professional Experience</h2>
-        <div class="job">
-            <h3>PhD Scholar | IISc</h3>
-            <p><em>January 2023 - Present</em></p>
-            <p>Pursuing PhD in Product Design and Engineering from the Department of Design and Manufacturing.</p>
-        </div>
-        <div class="job">
-            <h3>Project Engineer | Bharat Electronics Limited</h3>
-            <p><em>June 2022 - December 2022</em></p>
-            <p>Worked on the radar systems team, focusing on servo motor control systems for naval defense.</p>
-        </div>
-    </section>
-
-    <section id="projects" class="section">
-        <h2>Academic Projects</h2>
-        <div class="project">
-            <h3>Design and Verification of 32-bit Pipelined RISC Architecture</h3>
-            <p><strong>Objective:</strong> Enhance speed and reduce power consumption using Verilog modeling.</p>
-        </div>
-        <div class="project">
-            <h3>AI Intellectual Properties on FPGA</h3>
-            <p><strong>Objective:</strong> Implement CNN on FPGA for real-time image detection.</p>
-        </div>
-    </section>
-
-    <section id="publications" class="section">
-        <h2>Publications</h2>
-        <p>Details of published papers will be displayed here.</p>
-    </section>
-
-    <section id="contact" class="section">
-        <h2>Contact/Collaborate</h2>
-        <form action="mailto:shivakumardvg123@gmail.com" method="POST" enctype="text/plain">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <input type="submit" value="Send">
-        </form>
-        <div class="socials">
-            <h3>Connect with me</h3>
-            <a href="https://www.linkedin.com/in/shivakumar-v-76669a143">LinkedIn</a>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 Shivakumar V. All rights reserved.</p>
