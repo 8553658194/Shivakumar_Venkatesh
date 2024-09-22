@@ -11,33 +11,47 @@
 
     <!-- Introduction Section -->
     <section id="introduction">
-        <h1>Welcome to Shivakumar's Research Portfolio!</h1>
-        <p>I am a PhD Scholar at the Indian Institute of Science (IISc), specializing in VLSI, Smart Prosthetics, and Intent Recognition.</p>
+        <div class="intro-content">
+            <h1>Welcome to Shivakumar's Research Portfolio!</h1>
+            <p>I am a PhD Scholar at the Indian Institute of Science (IISc), focusing on VLSI, Smart Prosthetics, and Intent Recognition. My research aims to bridge the gap between human intentions and robotic prosthetics through innovative design and engineering solutions.</p>
+        </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills">
         <h2>Core Skills</h2>
         <div class="skills-container">
-            <div class="skill-icon">
-                <img src="https://example.com/python_icon.png" alt="Python" class="icon">
-                <p>Python</p>
-            </div>
-            <div class="skill-icon">
+            <div class="skill-icon" title="Basics of C">
                 <img src="https://example.com/c_icon.png" alt="C" class="icon">
                 <p>Basics of C</p>
             </div>
-            <div class="skill-icon">
+            <div class="skill-icon" title="Python">
+                <img src="https://example.com/python_icon.png" alt="Python" class="icon">
+                <p>Python</p>
+            </div>
+            <div class="skill-icon" title="Verilog">
                 <img src="https://example.com/verilog_icon.png" alt="Verilog" class="icon">
                 <p>Verilog</p>
             </div>
-            <div class="skill-icon">
-                <img src="https://example.com/machine_learning_icon.png" alt="Machine Learning" class="icon">
-                <p>Machine Learning</p>
+            <div class="skill-icon" title="Arduino Uno">
+                <img src="https://example.com/arduino_icon.png" alt="Arduino" class="icon">
+                <p>Arduino Uno</p>
             </div>
-            <div class="skill-icon">
-                <img src="https://example.com/haptics_icon.png" alt="Haptics" class="icon">
-                <p>Haptics</p>
+            <div class="skill-icon" title="AutoCAD">
+                <img src="https://example.com/autocad_icon.png" alt="AutoCAD" class="icon">
+                <p>AutoCAD</p>
+            </div>
+            <div class="skill-icon" title="VCS Synopsys Verdi">
+                <img src="https://example.com/vcs_icon.png" alt="VCS" class="icon">
+                <p>VCS Synopsys Verdi</p>
+            </div>
+            <div class="skill-icon" title="Xilinx ISE">
+                <img src="https://example.com/xilinx_icon.png" alt="Xilinx ISE" class="icon">
+                <p>Xilinx ISE</p>
+            </div>
+            <div class="skill-icon" title="Pattern Recognition">
+                <img src="https://example.com/pattern_recognition_icon.png" alt="Pattern Recognition" class="icon">
+                <p>Pattern Recognition</p>
             </div>
         </div>
     </section>
@@ -48,11 +62,11 @@
         <div class="accordion">
             <h3 onclick="togglePanel(this)">VLSI Design</h3>
             <div class="panel">
-                <p>Exploring technology to enhance processing speeds while conserving power.</p>
+                <p>Explore how cutting-edge technology can push the boundaries of processing speeds while conserving power.</p>
             </div>
             <h3 onclick="togglePanel(this)">Smart Prosthetics</h3>
             <div class="panel">
-                <p>Enhancing artificial limbs with intent recognition and haptics for better control.</p>
+                <p>Enhancing artificial limbs through intent recognition and haptics for better user control.</p>
             </div>
             <h3 onclick="togglePanel(this)">Haptics</h3>
             <div class="panel">
@@ -68,13 +82,17 @@
     <!-- Professional Experience Section -->
     <section id="experience">
         <h2>Professional Experience</h2>
-        <div>
-            <h3>Project Engineer | Bharat Electronics Limited (BEL)</h3>
-            <p>June 2022 - December 2022</p>
-            <p>Developed servo motor control systems for the Indian Navy's Lynx U2 system.</p>
-            <h3>Trainee Engineer | BEL</h3>
-            <p>March 2021 - May 2022</p>
-            <p>Collaborated on the Lynx U2 GFCS development, advancing air/ship defense technologies.</p>
+        <div class="timeline">
+            <div class="timeline-entry">
+                <h3>Project Engineer | Bharat Electronics Limited (BEL)</h3>
+                <p>June 2022 - December 2022</p>
+                <p>Developed servo motor control systems for the Indian Navy's Lynx U2 system, implementing safety protocols and enhancing naval defense capabilities.</p>
+            </div>
+            <div class="timeline-entry">
+                <h3>Trainee Engineer | Bharat Electronics Limited (BEL)</h3>
+                <p>March 2021 - May 2022</p>
+                <p>Collaborated on the Lynx U2 GFCS development, advancing air/ship defense technologies.</p>
+            </div>
         </div>
     </section>
 
@@ -82,14 +100,19 @@
     <section id="projects">
         <h2>Academic Projects</h2>
         <div class="project">
-            <h3>Design of 32-bit Pipelined RISC Architecture</h3>
+            <h3>Design and Verification of 32-bit Pipelined RISC Architecture</h3>
             <p>BMS College of Engineering | Jan 2020 - Sept 2020</p>
-            <p>Enhanced speed and reduced power consumption using Verilog modeling.</p>
+            <p>Objective: Enhance speed and reduce power consumption of a 32-bit RISC processor using Verilog modeling and UVM Testbench.</p>
+            <p>Achievements: Designed an efficient pipelined architecture to optimize processor performance.</p>
+            <p>Tools: VCS Synopsys Verdi for simulation, XPower Analyzer for power calculation.</p>
+            <img src="https://example.com/project1_image.png" alt="Project Image" class="project-image">
         </div>
         <div class="project">
-            <h3>AI IPs on FPGA</h3>
+            <h3>AI Intellectual Properties on FPGA</h3>
             <p>KriSemi Design Technologies | Aug 2019 - Dec 2019</p>
-            <p>Implemented CNN on FPGA for real-time image detection.</p>
+            <p>Objective: Implement CNN on FPGA for real-time image detection.</p>
+            <p>Tools: Verilog modeling for AI-based IPs, achieving real-time image classification.</p>
+            <img src="https://example.com/project2_image.png" alt="Project Image" class="project-image">
         </div>
     </section>
 
