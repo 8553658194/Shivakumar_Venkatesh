@@ -3,158 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shivakumar's Research Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <title>Shivakumar V's Research Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <h1>Welcome to Shivakumar V's Research Portfolio</h1>
+        <p>PhD Scholar at the Indian Institute of Science</p>
+    </header>
 
-    <!-- Introduction Section -->
-    <section id="introduction">
-        <div class="intro-content">
-            <h1>Welcome to Shivakumar's Research Portfolio!</h1>
-            <p>I am a PhD Scholar at the Indian Institute of Science (IISc), focusing on VLSI, Smart Prosthetics, and Intent Recognition. My research aims to bridge the gap between human intentions and robotic prosthetics through innovative design and engineering solutions.</p>
+    <nav>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#research-interests">Research Interests</a></li>
+            <li><a href="#experience">Professional Experience</a></li>
+            <li><a href="#projects">Academic Projects</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="introduction" class="section">
+        <h2>Introduction</h2>
+        <p>I'm a PhD Scholar at the Indian Institute of Science (IISc) with a focus on VLSI, Smart Prosthetics, and Intent Recognition. My research aims to bridge the gap between human intentions and robotic prosthetics through innovative design and engineering solutions.</p>
+        <img src="your-image.jpg" alt="Shivakumar V" class="profile-image">
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skill-list">
+            <div class="skill">
+                <h3>Programming Languages</h3>
+                <p>C, Python, Verilog</p>
+            </div>
+            <div class="skill">
+                <h3>Hardware Knowledge</h3>
+                <p>Arduino Uno, ORCAD Capture 16.6</p>
+            </div>
+            <div class="skill">
+                <h3>Engineering Software</h3>
+                <p>Visio, AutoCAD, VCS Synopsys Verdi</p>
+            </div>
+            <div class="skill">
+                <h3>FPGA & EDA Tools</h3>
+                <p>EDA Playground, Xilinx ISE, Vivado</p>
+            </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Core Skills</h2>
-        <div class="skills-container">
-            <div class="skill-icon" title="Basics of C">
-                <img src="https://example.com/c_icon.png" alt="C" class="icon">
-                <p>Basics of C</p>
-            </div>
-            <div class="skill-icon" title="Python">
-                <img src="https://example.com/python_icon.png" alt="Python" class="icon">
-                <p>Python</p>
-            </div>
-            <div class="skill-icon" title="Verilog">
-                <img src="https://example.com/verilog_icon.png" alt="Verilog" class="icon">
-                <p>Verilog</p>
-            </div>
-            <div class="skill-icon" title="Arduino Uno">
-                <img src="https://example.com/arduino_icon.png" alt="Arduino" class="icon">
-                <p>Arduino Uno</p>
-            </div>
-            <div class="skill-icon" title="AutoCAD">
-                <img src="https://example.com/autocad_icon.png" alt="AutoCAD" class="icon">
-                <p>AutoCAD</p>
-            </div>
-            <div class="skill-icon" title="VCS Synopsys Verdi">
-                <img src="https://example.com/vcs_icon.png" alt="VCS" class="icon">
-                <p>VCS Synopsys Verdi</p>
-            </div>
-            <div class="skill-icon" title="Xilinx ISE">
-                <img src="https://example.com/xilinx_icon.png" alt="Xilinx ISE" class="icon">
-                <p>Xilinx ISE</p>
-            </div>
-            <div class="skill-icon" title="Pattern Recognition">
-                <img src="https://example.com/pattern_recognition_icon.png" alt="Pattern Recognition" class="icon">
-                <p>Pattern Recognition</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Research Interests Section -->
-    <section id="research-interests">
+    <section id="research-interests" class="section">
         <h2>Research Interests</h2>
-        <div class="accordion">
-            <h3 onclick="togglePanel(this)">VLSI Design</h3>
-            <div class="panel">
-                <p>Explore how cutting-edge technology can push the boundaries of processing speeds while conserving power.</p>
-            </div>
-            <h3 onclick="togglePanel(this)">Smart Prosthetics</h3>
-            <div class="panel">
-                <p>Enhancing artificial limbs through intent recognition and haptics for better user control.</p>
-            </div>
-            <h3 onclick="togglePanel(this)">Haptics</h3>
-            <div class="panel">
-                <p>Investigating feedback systems that create a more natural user experience in prosthetic technologies.</p>
-            </div>
-            <h3 onclick="togglePanel(this)">Product Design</h3>
-            <div class="panel">
-                <p>Translating innovative concepts into real-world products with efficiency and functionality at their core.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Professional Experience Section -->
-    <section id="experience">
-        <h2>Professional Experience</h2>
-        <div class="timeline">
-            <div class="timeline-entry">
-                <h3>Project Engineer | Bharat Electronics Limited (BEL)</h3>
-                <p>June 2022 - December 2022</p>
-                <p>Developed servo motor control systems for the Indian Navy's Lynx U2 system, implementing safety protocols and enhancing naval defense capabilities.</p>
-            </div>
-            <div class="timeline-entry">
-                <h3>Trainee Engineer | Bharat Electronics Limited (BEL)</h3>
-                <p>March 2021 - May 2022</p>
-                <p>Collaborated on the Lynx U2 GFCS development, advancing air/ship defense technologies.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Academic Projects Section -->
-    <section id="projects">
-        <h2>Academic Projects</h2>
-        <div class="project">
-            <h3>Design and Verification of 32-bit Pipelined RISC Architecture</h3>
-            <p>BMS College of Engineering | Jan 2020 - Sept 2020</p>
-            <p>Objective: Enhance speed and reduce power consumption of a 32-bit RISC processor using Verilog modeling and UVM Testbench.</p>
-            <p>Achievements: Designed an efficient pipelined architecture to optimize processor performance.</p>
-            <p>Tools: VCS Synopsys Verdi for simulation, XPower Analyzer for power calculation.</p>
-            <img src="https://example.com/project1_image.png" alt="Project Image" class="project-image">
-        </div>
-        <div class="project">
-            <h3>AI Intellectual Properties on FPGA</h3>
-            <p>KriSemi Design Technologies | Aug 2019 - Dec 2019</p>
-            <p>Objective: Implement CNN on FPGA for real-time image detection.</p>
-            <p>Tools: Verilog modeling for AI-based IPs, achieving real-time image classification.</p>
-            <img src="https://example.com/project2_image.png" alt="Project Image" class="project-image">
-        </div>
-    </section>
-
-    <!-- Publications Section -->
-    <section id="publications">
-        <h2>Publications</h2>
-        <ul class="publication-list">
-            <li><a href="https://example.com/publication1.pdf">Title of Your Publication</a> - Brief summary or abstract.</li>
-            <li><a href="https://example.com/publication2.pdf">Title of Your Second Publication</a> - Brief summary or abstract.</li>
-            <!-- Add more publications similarly -->
+        <ul>
+            <li><strong>VLSI Design:</strong> Explore cutting-edge technology to enhance processing speeds while conserving power.</li>
+            <li><strong>Smart Prosthetics:</strong> Enhancing artificial limbs through intent recognition and haptics.</li>
+            <li><strong>Haptics:</strong> Investigating feedback systems for a natural user experience in prosthetics.</li>
+            <li><strong>Product Design:</strong> Translating innovative concepts into efficient, functional products.</li>
         </ul>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
+    <section id="experience" class="section">
+        <h2>Professional Experience</h2>
+        <div class="job">
+            <h3>PhD Scholar | IISc</h3>
+            <p><em>January 2023 - Present</em></p>
+            <p>Pursuing PhD in Product Design and Engineering from the Department of Design and Manufacturing.</p>
+        </div>
+        <div class="job">
+            <h3>Project Engineer | Bharat Electronics Limited</h3>
+            <p><em>June 2022 - December 2022</em></p>
+            <p>Worked on the radar systems team, focusing on servo motor control systems for naval defense.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Academic Projects</h2>
+        <div class="project">
+            <h3>Design and Verification of 32-bit Pipelined RISC Architecture</h3>
+            <p><strong>Objective:</strong> Enhance speed and reduce power consumption using Verilog modeling.</p>
+        </div>
+        <div class="project">
+            <h3>AI Intellectual Properties on FPGA</h3>
+            <p><strong>Objective:</strong> Implement CNN on FPGA for real-time image detection.</p>
+        </div>
+    </section>
+
+    <section id="publications" class="section">
+        <h2>Publications</h2>
+        <p>Details of published papers will be displayed here.</p>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact/Collaborate</h2>
+        <form action="mailto:shivakumardvg123@gmail.com" method="POST" enctype="text/plain">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
             <label for="message">Message:</label>
             <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
+            <input type="submit" value="Send">
         </form>
-        <h3>Follow Me</h3>
-        <div class="social-links">
-            <a href="https://github.com/yourusername"><img src="https://example.com/github_icon.png" alt="GitHub" class="social-icon"></a>
-            <a href="https://www.linkedin.com/in/yourusername"><img src="https://example.com/linkedin_icon.png" alt="LinkedIn" class="social-icon"></a>
+        <div class="socials">
+            <h3>Connect with me</h3>
+            <a href="https://www.linkedin.com/in/shivakumar-v-76669a143">LinkedIn</a>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Shivakumar. All Rights Reserved.</p>
+        <p>&copy; 2024 Shivakumar V. All rights reserved.</p>
     </footer>
-
-    <script>
-        function togglePanel(element) {
-            var panel = element.nextElementSibling;
-            panel.style.display = (panel.style.display === "block") ? "none" : "block";
-        }
-    </script>
 </body>
 </html>
